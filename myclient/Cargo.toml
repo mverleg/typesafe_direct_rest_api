@@ -4,3 +4,7 @@ version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+
+[lib]
+name = "myclient"
+path = "lib.rs"
