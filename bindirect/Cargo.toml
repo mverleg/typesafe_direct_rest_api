@@ -1,6 +1,10 @@
 [package]
-name = "clientbin"
+name = "directbin"
 version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+
+[[bin]]
+name = "server"
+path = "main.rs"
