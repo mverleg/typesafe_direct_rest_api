@@ -1,9 +1,12 @@
 [package]
-name = "serverbin"
+name = "binserver"
 version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+iface = { path = "../iface" }
+myserver = { path = "../myserver" }
+gen_rest_server = { path = "../gen_rest_server" }
 
 [[bin]]
 name = "direct"

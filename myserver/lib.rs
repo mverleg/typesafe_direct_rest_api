@@ -1,7 +1,8 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+extern crate iface;
+extern crate apilib;
+#[macro_use]
+extern crate derive_new;
+
+pub mod myserver {
+    pub mod example_one;
 }

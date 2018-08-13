@@ -1,5 +1,5 @@
 [package]
-name = "directbin"
+name = "bindirect"
 version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 

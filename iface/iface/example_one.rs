@@ -1,30 +1,46 @@
+use apilib::apilib::target::TMethod;
+use apilib::apilib::request::TRequest;
+use apilib::apilib::response::TResponse;
+use apilib::apilib::target::TTarget;
+use apilib::apilib::transfer::Transfer;
+use std::path::PathBuf;
 
-#[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
+#[derive(new, Debug, Serialize, Deserialize, Clone, PartialEq)]
 pub struct SearchQuery {
-    keywords: String,
+    pub keywords: String,
 }
 
-#[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
+impl Transfer for SearchQuery {
+    fn clean(self) -> Self {
+        self
+    }
+}
+
+#[derive(new, Debug, Serialize, Deserialize, Clone, PartialEq)]
 pub struct SearchResult {
-    matches: Vec<String>,
+    pub matches: Vec<String>,
+}
+
+impl Transfer for SearchResult {
+    fn clean(self) -> Self {
+        self
+    }
 }
 
 pub trait ExampleOne {
-    fn search(request: TRequest<SearchQuery>) -> TResponse<SearchResult> {
-        let result = TResponse::new(
-            request.value.clone() + " one".to_owned(),
-            request.value.clone() + " two".to_owned(),
-            request.value  + " three".to_owned(),
-        );
-    }
+    // TODO @mverleg: the '&self' is only to make it object-safe
+    fn search(&self, request: TRequest<SearchQuery>) -> TResponse<SearchResult>;
 }
 
-impl Endpoint for ExampleOne {
-    fn method() -> TMethod {
+impl TTarget for ExampleOne {
+    fn method(&self) -> TMethod {
         TMethod::Get
     }
 
-    fn url() -> String {
-        "/ex1".to_owned()
+    fn url(&self) -> PathBuf {
+        // TODO @mverleg: there has to be a one-line way...
+        let mut path = PathBuf::new();
+        path.push("/ex1");
+        path
     }
 }

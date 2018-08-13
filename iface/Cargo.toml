@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+apilib = { path = "../apilib" }
+derive-new = "0.5"
+serde = "1.0"
+serde_derive = "1.0"
 
 [lib]
 name = "iface"

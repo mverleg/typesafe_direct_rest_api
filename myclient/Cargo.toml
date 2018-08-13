@@ -1,9 +1,10 @@
 [package]
-name = "client"
+name = "myclient"
 version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+derive-new = "0.5"
 
 [lib]
 name = "myclient"

@@ -1,5 +1,4 @@
 use apilib::transfer::Transfer;
-use serde_json;
 use serde::Serialize;
 use serde::Deserialize;
 

@@ -4,6 +4,14 @@ version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+apilib = { path = "../apilib" }
+iface = { path = "../iface" }
+myserver = { path = "../myserver" }
+simple-server = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+derive-new = "0.5"
 
 [lib]
 name = "gen_rest_server"

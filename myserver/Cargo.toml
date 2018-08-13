@@ -1,9 +1,12 @@
 [package]
-name = "server"
+name = "myserver"
 version = "0.1.0"
 authors = ["Mark <mverleg.noreply@gmail.com>"]
 
 [dependencies]
+apilib = { path = "../apilib" }
+iface = { path = "../iface" }
+derive-new = "0.5"
 
 [lib]
 name = "myserver"
