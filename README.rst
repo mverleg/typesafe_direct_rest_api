@@ -2,6 +2,8 @@
 Type-safe REST API
 ===============================
 
+**Superseded by [Apivolve](https://github.com/mverleg/apivolve)**
+
 There are several features I want to explore in this repository:
 
 - Define a typ-safe rest api using a trait (callee side is the server, caller side is the client).
