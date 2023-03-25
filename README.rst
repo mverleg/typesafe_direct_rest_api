@@ -1,8 +1,10 @@
 
 Type-safe REST API
-===============================
+===================
 
-**Superseded by `Apivolve <https://github.com/mverleg/apivolve>`_**
+Superseded by `Apivolve <https://github.com/mverleg/apivolve>`_ .
+-------------------
+
 
 There are several features I want to explore in this repository:
 
@@ -13,7 +15,7 @@ There are several features I want to explore in this repository:
 **The code is not done yet, it is an ongoing experiment.**
 
 Structure
--------------------------------
+-------------------
 
 "User" code:
 
