@@ -2,7 +2,7 @@
 Type-safe REST API
 ===============================
 
-**Superseded by `Apivolve`_**
+**Superseded by `Apivolve <https://github.com/mverleg/apivolve>`_**
 
 There are several features I want to explore in this repository:
 
@@ -32,8 +32,3 @@ This package's code:
 * **apilib** The types and macros needed for defining and generating the api.
 * **gen_rest_server** Wrapper derived from *iface* that makes *myserver* accessible through http api calls.
 * **gen_rest_client** Wrapper derived from *iface* for the client that converts *iface* calls to api requests.
-
-
-.. _`Apivolve`: https://github.com/mverleg/apivolve
-
-
